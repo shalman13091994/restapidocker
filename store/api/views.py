@@ -1,4 +1,3 @@
-from store.api.serializers import ProductListSerializers
 from rest_framework import generics, mixins
 from store.models import Product
 from .serializers import ProductListSerializers
@@ -24,3 +23,4 @@ class ProductAPIRUDView(generics.RetrieveDestroyAPIView):
     def patch(self, request, *args, **kwargs):
         return self.update( request, *args, **kwargs)
     
+
